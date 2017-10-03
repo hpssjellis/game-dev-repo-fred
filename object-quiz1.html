@@ -1,0 +1,47 @@
+
+
+
+<script>
+
+function myAnimal(x){
+        
+
+   this.myAge = x;
+        
+
+   this.myOut = function(){
+            
+
+       document.getElementById('myDiv01').innerHTML = 'The animal\'s age is ' + this.myAge
+        
+
+  }
+    
+
+}
+    
+  
+  
+
+   
+
+</script>
+
+
+Age: <input type=text value=8 id="myText01">
+
+
+
+<input type=button value=click onclick="{
+
+    
+
+   myLogan = new myAnimal(document.getElementById('myText01').value)
+    
+
+   myLogan.myOut()
+}">
+
+
+<div id="myDiv01">...</div>
+
